@@ -53,6 +53,7 @@ const AuthForm = ({ type }: { type: string }) => {
     const onSubmit = async (data: z.infer<typeof formSchema>) => {
         // Do something with the form values.
         // ✅ This will be type-safe and validated.
+        setisLoading(true)
         try {
             // sign up - appwrite & plaid link token
 
